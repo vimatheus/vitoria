@@ -1,0 +1,35 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Fale conosco</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    <ion-list>
+
+        <ion-item>
+          <ion-label fixed>Nome:</ion-label>
+          <ion-input type="text" autofocus [(ngModel)]="txtNome"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>Email:</ion-label>
+          <ion-input type="text" [(ngModel)]="txtEmail"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Dúvidas:</ion-label>
+            <ion-input type="text" [(ngModel)]="txtDuvidas"></ion-input>
+          </ion-item>
+          <button ion-button (click)="goToListaDuvida()">Entrar</button><br>
+      <b>Dúvidas Frequentes:</b><br>
+            Qual whatsapp da loja ?<br> 
+            R: 976854788.<br>
+            Onde fica a loja?<br>
+            R: Nova Iguaçu , rua Pedro Antonio Pereira 133.<br>
+            Qual a qualidade do material?<br>
+            R: Tecidos vindos diretamente de NY.
+
+      </ion-list>
+
+</ion-content>
